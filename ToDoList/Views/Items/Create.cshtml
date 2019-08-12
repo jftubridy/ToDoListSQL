@@ -12,6 +12,12 @@
     @Html.Label("Select Category")
     @Html.DropDownList("CategoryId")
 
+    @Html.LabelFor(model => model.TaskComplete)
+    @Html.TextBoxFor(model => model.TaskComplete)
+
+    @Html.LabelFor(model => model.Duedate)
+    @Html.TextBoxFor(model => model.Duedate)
+
     <input type="submit" value="Add new item" class="btn btn-default" />
 }
 <p>@Html.ActionLink("Show all items", "Index")</p>

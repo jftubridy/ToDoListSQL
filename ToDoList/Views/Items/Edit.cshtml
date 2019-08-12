@@ -15,6 +15,12 @@
     @Html.LabelFor(model => model.Description)
     @Html.EditorFor(model => model.Description)
 
+    @Html.LabelFor(model => model.TaskComplete)
+    @Html.EditorFor(model => model.TaskComplete)
+
+    @Html.LabelFor(model => model.Duedate)
+    @Html.EditorFor(model => model.Duedate)
+
     @Html.Label("Select Category")
     @Html.DropDownList("CategoryId")
 

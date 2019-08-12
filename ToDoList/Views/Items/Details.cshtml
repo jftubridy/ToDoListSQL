@@ -15,6 +15,8 @@
 else
 {
   <h4>Categories the item belongs to:</h4>
+  <p>@Html.DisplayNameFor(model => model.TaskComplete): @Html.DisplayFor(model => model.TaskComplete)</p>
+<p>@Html.DisplayNameFor(model => model.Duedate): @Html.DisplayFor(model => model.Duedate)</p>  
   <ul>
   @foreach(var join in Model.Categories)
   {

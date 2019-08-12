@@ -21,6 +21,12 @@ namespace ToDoList.Controllers
             return View(_db.Items.ToList());
         }
 
+        public ActionResult DueDateSort()
+        {
+
+            return View("DueDateSort", _db.Items.OrderBy(item => item.Duedate).ToList());
+        }
+
         public ActionResult Details(int id)
         {
             var thisItem = _db.Items
@@ -106,5 +112,6 @@ namespace ToDoList.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+
     }
 }
